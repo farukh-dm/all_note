@@ -1,0 +1,11 @@
+<div class="row">	
+		<div class="col-md-4 col-sm-6" ng-repeat="user in users">
+			<div class="panel panel-default">
+		  	<div class="panel-body">
+				  <h4>{{user.name | limitTo: 90}} {{user.name.length > 90 ? '...' : ''}}</h4>
+				  <p>{{user.bio | limitTo: 100}} {{user.bio.length > 100 ? '...' : ''}}</p>
+				  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div>
+			</div>
+		</div>	
+</div>

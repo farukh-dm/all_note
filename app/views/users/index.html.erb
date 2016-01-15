@@ -1,0 +1,14 @@
+<%#= render 'users/templates/user' %>
+<div class="row">
+	<% @users.each do |user| %>
+		<div class="col-md-4 col-sm-6">
+			<div class="panel panel-default">
+		  	<div class="panel-body">
+				  <h4><%= truncate(user.name, length: 16) %></h4>
+				  <p><%= truncate(user.bio, length: 100) %></p>
+				  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>

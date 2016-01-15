@@ -1,0 +1,5 @@
+<div>
+  <h4>{{note.title | limitTo: 90}} {{note.title.length > 90 ? '...' : ''}}</h4>
+  <p>{{note.description | limitTo: 100}} {{note.description.length > 100 ? '...' : ''}}</p>
+  <p><a class="btn btn-default" href="#notes/{{note.id}}" role="button">View details &raquo;</a></p>
+<div>

@@ -20,5 +20,3 @@ Options to user $scope OR this in controller.
 - with $scope we can directly access the variables.
 - with this we need to use controller alias to access the variables.
 
-Random Comment.
-
